@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import { useSelector } from "react-redux";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
@@ -39,9 +40,8 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div>
-      <RouterProvider router={router}>
-        {/* <div>Sachin</div> */}
-      </RouterProvider>
+      <Toaster />
+      <RouterProvider router={router}>{/* <div>Sachin</div> */}</RouterProvider>
     </div>
   );
 }
